@@ -26,13 +26,13 @@ function randomNumber(min,max) {
 let even="pari";
 let odd="dispari";
 let userChoice;
-// do{
-//     userChoice=prompt(`scegli ${even} o ${odd}`)
-// }
-// while (userChoice.toLowerCase() !== even.toLowerCase() || userChoice.toLowerCase() !== odd.toLowerCase()) {
-//     alert("scrivi pari o dispari");
-//     userChoice=prompt(`scegli ${even} o ${odd}`)
-// }
+do{
+    userChoice=prompt(`scegli ${even} o ${odd}`)
+}
+while (userChoice.toLowerCase() !== even.toLowerCase() || userChoice.toLowerCase() !== odd.toLowerCase()) {
+    alert("scrivi pari o dispari");
+    userChoice=prompt(`scegli ${even} o ${odd}`)
+}
 
 let userScore=parseInt(prompt("inserisci un numero da 1 a 5"));
 if (userScore > 5) {
